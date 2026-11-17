@@ -165,13 +165,15 @@ function person(){
 }
 function rookie(){
   const p=D.rookies, t=D.rookieTarget; if(!p.length) return `<div class="empty">まだデータがありません</div>`;
+  const top=p.slice(0,3), order=[1,0,2].filter(i=>top[i]);
+  const pod=`<div class="podium">${order.map(i=>{const x=top[i];return `<div class="pod r${Math.min(x.rank,3)}"><div class="medal">${x.rank}</div><div class="nm">${esc(x.name)}</div><div class="sub">${esc(x.office)}</div><div class="sc">${fmt(x.points)}<small>pt</small></div><div class="sub">新規 ${x.newReg}/${t.newReg}名<br>医師 ${x.newDentist}/${t.dentistReg}名</div>${x.achieved?`<span class="badge" style="margin:6px 0 0">目標達成！</span>`:""}</div>`;}).join("")}</div>`;
   const rows=p.slice(0,SHOW.rookie).map(x=>`<div class="row"><div class="rk">${x.rank}${change(x)}</div>
       <div><div class="nm2">${esc(x.name)}<small>${esc(x.office)}</small>${x.achieved?`<span class="badge">目標達成！</span>`:""}</div>
         <div class="ach"><span>新規登録</span><div class="bar"><i style="width:${Math.min(100,x.newReg/t.newReg*100)}%"></i></div><span><b>${x.newReg}</b>/${t.newReg}名</span>
           <span>歯科医師</span><div class="bar d"><i style="width:${Math.min(100,x.newDentist/t.dentistReg*100)}%"></i></div><span><b>${x.newDentist}</b>/${t.dentistReg}名</span></div></div>
       <div class="score">${fmt(x.points)}<small>pt</small></div></div>`).join("");
   const more=p.length>SHOW.rookie?`<button class="more" data-more="rookie">もっと見る（全${p.length}名）</button>`:"";
-  return `<div class="list">${rows}</div>`+more;
+  return pod+`<div class="list">${rows}</div>`+more;
 }
 function render(){
   $("#view").innerHTML = TAB==="office"?office():TAB==="person"?person():rookie();
