@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>今週のランキング｜LINE公式 社内キャンペーン</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fff8ef; --card:#ffffff; --ink:#3a2a1e; --ink2:#7a6455; --ink3:#a8968a; --line:#f1e3d3;
+  --or:#f26b1d; --or2:#ff9a3c; --orw:#ffe9d6;
+  --c1:#f26b1d; --c2:#2a78d6; --c3:#2e9e6a; --c4:#8e5bc9;
+  --gold:#e7b416; --silver:#9aa4ad; --bronze:#c27a45;
+  --up:#1e8a4c; --dn:#c0392b;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.6 "Noto Sans JP",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:960px;margin:0 auto;padding:20px 16px 40px}
+.round{font-family:"M PLUS Rounded 1c","Noto Sans JP",sans-serif}
+.sample{background:#fff3c4;border:1px dashed #d9a400;color:#7a5a00;border-radius:12px;padding:8px 14px;font-size:13px;margin-bottom:14px;text-align:center}
+.hero{background:linear-gradient(135deg,#ff8a2b 0%,#f26b1d 55%,#e8550f 100%);color:#fff;border-radius:24px;padding:22px 24px 20px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.12)}
+.hero .kicker{font-size:13px;font-weight:700;letter-spacing:.08em;opacity:.95}
+.hero h1{margin:4px 0 10px;font-size:30px;font-weight:800;letter-spacing:.02em}
+.hero .meta{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;opacity:.95}
+.prog{margin-top:14px;background:rgba(255,255,255,.28);height:8px;border-radius:4px;overflow:hidden}
+.prog i{display:block;height:100%;background:#fff;border-radius:4px}
+.prog-l{display:flex;justify-content:space-between;font-size:11.5px;margin-top:4px;opacity:.9}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0 4px}
+.stat{background:var(--card);border-radius:16px;padding:12px 14px;border:1px solid var(--line)}
+.stat .l{font-size:12px;color:var(--ink2)} .stat .v{font-size:24px;font-weight:800;font-variant-numeric:tabular-nums}
+.stat .v small{font-size:13px;font-weight:600;color:var(--ink2);margin-left:2px}
+.tabs{display:flex;gap:6px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px;margin:18px 0 14px;position:sticky;top:8px;z-index:3;box-shadow:0 4px 14px rgba(120,60,10,.06)}
+.tab{flex:1;border:0;background:transparent;border-radius:999px;padding:10px 6px;font:700 15px "M PLUS Rounded 1c",sans-serif;color:var(--ink2);cursor:pointer}
+.tab small{display:block;font:500 11px "Noto Sans JP",sans-serif;opacity:.8}
+.tab[aria-selected=true]{background:var(--or);color:#fff}
+.podium{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;align-items:end;margin-bottom:12px}
+.pod{background:var(--card);border-radius:20px;padding:16px 12px 14px;text-align:center;border:2px solid var(--line);position:relative}
+.pod.r1{border-color:var(--gold);box-shadow:0 8px 24px rgba(231,180,22,.22);padding-top:24px}
+.pod.r2{border-color:var(--silver)} .pod.r3{border-color:var(--bronze)}
+.medal{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;margin:-36px auto 6px;color:#fff;font:800 18px "M PLUS Rounded 1c";box-shadow:0 3px 8px rgba(0,0,0,.15)}
+.r1 .medal{background:var(--gold);width:48px;height:48px;font-size:22px;margin-top:-48px}
+.r2 .medal{background:var(--silver)} .r3 .medal{background:var(--bronze)}
+.pod .nm{font:800 17px "M PLUS Rounded 1c";line-height:1.3}
+.pod .sub{font-size:12px;color:var(--ink2)}
+.pod .sc{font:800 30px "M PLUS Rounded 1c";color:var(--or);font-variant-numeric:tabular-nums;margin-top:4px}
+.pod .sc small{font-size:13px;color:var(--ink2);font-weight:700;margin-left:2px}
+.list{display:grid;gap:8px}
+.row{display:grid;grid-template-columns:44px 1fr auto;gap:10px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px 14px}
+.rk{font:800 20px "M PLUS Rounded 1c";text-align:center;color:var(--ink);font-variant-numeric:tabular-nums}
+.rk .ch{display:block;font:700 11px "Noto Sans JP";margin-top:-2px}
+.up{color:var(--up)} .dn{color:var(--dn)} .eq{color:var(--ink3)}
+.nm2{font-weight:700;font-size:15.5px}
+.nm2 small{font-weight:500;color:var(--ink2);font-size:12px;margin-left:6px}
+.score{font:800 22px "M PLUS Rounded 1c";color:var(--or);text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.score small{font-size:12px;color:var(--ink2);margin-left:2px}
+.stack{display:flex;height:10px;border-radius:5px;background:#f6ece2;overflow:hidden;margin-top:6px;gap:2px}
+.stack i{display:block;height:100%}
+.stack i:first-child{border-radius:5px 0 0 5px}
+.mini{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:12px;color:var(--ink2);margin-top:5px;font-variant-numeric:tabular-nums}
+.mini b{color:var(--ink);font-weight:700}
+.dot{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:4px;vertical-align:0}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--ink2);margin:2px 0 10px}
+.ach{display:grid;grid-template-columns:auto 1fr auto;gap:6px 8px;align-items:center;font-size:12px;color:var(--ink2);margin-top:6px}
+.bar{height:8px;background:#f6ece2;border-radius:4px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--or);border-radius:4px}
+.bar.d i{background:var(--c2)}
+.badge{display:inline-block;background:var(--orw);color:#c2500b;border-radius:999px;padding:1px 9px;font-size:11.5px;font-weight:700;margin-left:6px;vertical-align:2px}
+.more{display:block;margin:12px auto 0;border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 22px;font:700 14px "M PLUS Rounded 1c";color:var(--ink2);cursor:pointer}
+.empty{text-align:center;color:var(--ink2);background:#fff;border:1px dashed var(--line);border-radius:16px;padding:28px}
+details.rule{margin-top:22px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 16px;font-size:13px;color:var(--ink2)}
+details.rule summary{cursor:pointer;font:700 14px "M PLUS Rounded 1c";color:var(--ink)}
+details.rule table{border-collapse:collapse;width:100%;margin-top:8px}
+details.rule td{padding:5px 6px;border-top:1px solid var(--line);vertical-align:top}
+footer{text-align:center;color:var(--ink3);font-size:11.5px;margin-top:18px}
+@media (max-width:640px){
+  .hero h1{font-size:24px}
+  .podium{gap:6px} .pod{padding:14px 6px 10px} .pod .nm{font-size:14px} .pod .sc{font-size:22px}
+  .stat .v{font-size:19px}
+  .row{grid-template-columns:36px 1fr auto;padding:10px 12px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div id="sample" class="sample" hidden>これはデザイン確認用のサンプルです（新規登録数はダミー、③既存登録浸透度は現時点の実データ）</div>
+  <header class="hero">
+    <div class="kicker">年末大抽選会　LINE公式 社内キャンペーン</div>
+    <h1 class="round">今週のランキング</h1>
+    <div class="meta" id="meta"></div>
+    <div class="prog"><i id="progbar"></i></div>
+    <div class="prog-l" id="progl"></div>
+  </header>
+  <div class="stats" id="stats"></div>
+  <nav class="tabs" role="tablist">
+    <button class="tab" role="tab" data-t="office" aria-selected="true">営業所賞<small>100点満点</small></button>
+    <button class="tab" role="tab" data-t="person" aria-selected="false">個人賞<small>全社員対象</small></button>
+    <button class="tab" role="tab" data-t="rookie" aria-selected="false">新人賞<small>入社2年未満</small></button>
+  </nav>
+  <main id="view"><div class="empty">読み込み中…</div></main>
+  <details class="rule">
+    <summary>採点ルール（かんたん版）</summary>
+    <table>
+      <tr><td><b>営業所賞</b></td><td>① 新規登録目標達成率 35点：新規登録者数 ÷（ルート数×8）×35<br>② 歯科医師登録目標達成率 30点：歯科医師の新規登録数 ÷（ルート数×3）×30<br>③ 既存登録浸透度 20点：開始時点の登録済み医院数 ÷ 全取引医院数 ×20<br>④ 新規開拓率 15点：新規開拓医院数 ÷ 開始時点の未登録医院数 ÷0.7 ×15（70%で満点）</td></tr>
+      <tr><td><b>個人賞</b></td><td>新規登録1名につき 歯科衛生士・歯科助手 1pt／歯科医師 2pt</td></tr>
+      <tr><td><b>新人賞</b></td><td>ポイントは個人賞と同じ。目標：新規登録8名・うち歯科医師3名</td></tr>
+      <tr><td><b>注意</b></td><td>期間中に初めて友だち追加した方が対象（再登録は対象外）。①②は人単位、③④は医院単位で集計します。</td></tr>
+    </table>
+  </details>
+  <footer id="foot"></footer>
+</div>
+<script>
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt=v=>Number(v).toLocaleString("ja-JP",{maximumFractionDigits:1});
+const COLORS=["var(--c1)","var(--c2)","var(--c3)","var(--c4)"];
+const MET=["①新規登録","②歯科医師登録","③既存浸透","④新規開拓"];
+const MAX=[35,30,20,15];
+let D=null, TAB="office", SHOW={person:20,rookie:50};
+
+function change(r){
+  if(r.prevRank==null) return "";
+  const d=r.prevRank-r.rank;
+  return d>0?`<span class="ch up">▲${d}</span>`:d<0?`<span class="ch dn">▼${-d}</span>`:`<span class="ch eq">－</span>`;
+}
+function header(){
+  const asOf=new Date(D.asOf), st=new Date(D.period.start), en=new Date(D.period.end);
+  const md=d=>`${d.getMonth()+1}/${d.getDate()}`;
+  const total=en-st, done=Math.min(Math.max(asOf-st,0),total), left=Math.max(0,Math.ceil((en-asOf)/864e5));
+  $("#meta").innerHTML=`<span>${asOf.getFullYear()}/${md(asOf)} ${String(asOf.getHours()).padStart(2,"0")}:${String(asOf.getMinutes()).padStart(2,"0")} 時点</span><span>期間 ${md(st)}〜${md(en)}</span><span><b>のこり ${left}日</b></span>`;
+  $("#progbar").style.width=(done/total*100).toFixed(1)+"%";
+  $("#progl").innerHTML=`<span>${md(st)} スタート</span><span>${md(en)} 締切</span>`;
+  const dent=D.offices.reduce((a,o)=>a+o.newDentist,0), pion=D.offices.reduce((a,o)=>a+o.pioneered,0);
+  $("#stats").innerHTML=`<div class="stat"><div class="l">期間中の新規登録</div><div class="v">${fmt(D.totals.newReg)}<small>名</small></div></div>
+    <div class="stat"><div class="l">うち歯科医師</div><div class="v">${fmt(dent)}<small>名</small></div></div>
+    <div class="stat"><div class="l">新規開拓した医院</div><div class="v">${fmt(pion)}<small>院</small></div></div>`;
+  $("#sample").hidden=!D.sample;
+  $("#foot").textContent=`集計：LMessage 公式LINE登録データ（${asOf.getFullYear()}/${md(asOf)} 時点）`;
+}
+function stack(s){ return `<div class="stack" aria-hidden="true">${s.map((v,i)=>`<i style="width:${v}%;background:${COLORS[i]}"></i>`).join("")}</div>`; }
+function office(){
+  const o=D.offices; if(!o.length) return `<div class="empty">まだデータがありません</div>`;
+  const top=o.slice(0,3), order=[1,0,2].filter(i=>top[i]);
+  const pod=`<div class="podium">${order.map(i=>{const x=top[i];return `<div class="pod r${x.rank<=3?x.rank:3}"><div class="medal">${x.rank}</div><div class="nm">${esc(x.name)}</div><div class="sub">ルート${x.routes}</div><div class="sc">${fmt(x.total)}<small>点</small></div>${stack(x.s)}</div>`;}).join("")}</div>`;
+  const legend=`<div class="legend">${MET.map((m,i)=>`<span><span class="dot" style="background:${COLORS[i]}"></span>${m}（${MAX[i]}点）</span>`).join("")}</div>`;
+  const rows=o.map(x=>`<div class="row"><div class="rk">${x.rank}${change(x)}</div>
+      <div><div class="nm2">${esc(x.name)}<small>ルート${x.routes}</small></div>${stack(x.s)}
+        <div class="mini"><span><span class="dot" style="background:var(--c1)"></span>新規 <b>${x.newReg}</b>/${x.newRegTarget}名</span><span><span class="dot" style="background:var(--c2)"></span>医師 <b>${x.newDentist}</b>/${x.newDentistTarget}名</span><span><span class="dot" style="background:var(--c3)"></span>浸透 <b>${(x.penetration*100).toFixed(1)}</b>%</span><span><span class="dot" style="background:var(--c4)"></span>開拓 <b>${x.pioneered}</b>/${x.unregAtStart}院</span></div></div>
+      <div class="score">${fmt(x.total)}<small>点</small></div></div>`).join("");
+  return pod+legend+`<div class="list">${rows}</div>`;
+}
+function person(){
+  const p=D.people; if(!p.length) return `<div class="empty">まだ新規登録がありません</div>`;
+  const top=p.slice(0,3), order=[1,0,2].filter(i=>top[i]);
+  const pod=`<div class="podium">${order.map(i=>{const x=top[i];return `<div class="pod r${Math.min(x.rank,3)}"><div class="medal">${x.rank}</div><div class="nm">${esc(x.name)}</div><div class="sub">${esc(x.office)}</div><div class="sc">${fmt(x.points)}<small>pt</small></div></div>`;}).join("")}</div>`;
+  const rows=p.slice(0,SHOW.person).map(x=>`<div class="row"><div class="rk">${x.rank}${change(x)}</div>
+      <div><div class="nm2">${esc(x.name)}<small>${esc(x.office)}</small></div><div class="mini"><span>歯科医師 <b>${x.dentist}</b>名</span><span>衛生士・助手 <b>${x.dh}</b>名</span>${x.other?`<span>その他 ${x.other}名</span>`:""}</div></div>
+      <div class="score">${fmt(x.points)}<small>pt</small></div></div>`).join("");
+  const more=p.length>SHOW.person?`<button class="more" data-more="person">もっと見る（全${p.length}名）</button>`:"";
+  return pod+`<div class="list">${rows}</div>`+more;
+}
+function rookie(){
+  const p=D.rookies, t=D.rookieTarget; if(!p.length) return `<div class="empty">まだデータがありません</div>`;
+  const rows=p.slice(0,SHOW.rookie).map(x=>`<div class="row"><div class="rk">${x.rank}${change(x)}</div>
+      <div><div class="nm2">${esc(x.name)}<small>${esc(x.office)}</small>${x.achieved?`<span class="badge">目標達成！</span>`:""}</div>
+        <div class="ach"><span>新規登録</span><div class="bar"><i style="width:${Math.min(100,x.newReg/t.newReg*100)}%"></i></div><span><b>${x.newReg}</b>/${t.newReg}名</span>
+          <span>歯科医師</span><div class="bar d"><i style="width:${Math.min(100,x.newDentist/t.dentistReg*100)}%"></i></div><span><b>${x.newDentist}</b>/${t.dentistReg}名</span></div></div>
+      <div class="score">${fmt(x.points)}<small>pt</small></div></div>`).join("");
+  const more=p.length>SHOW.rookie?`<button class="more" data-more="rookie">もっと見る（全${p.length}名）</button>`:"";
+  return `<div class="list">${rows}</div>`+more;
+}
+function render(){
+  $("#view").innerHTML = TAB==="office"?office():TAB==="person"?person():rookie();
+  document.querySelectorAll("[data-more]").forEach(b=>b.onclick=()=>{ SHOW[b.dataset.more]=1e9; render(); });
+}
+document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{ TAB=b.dataset.t; document.querySelectorAll(".tab").forEach(x=>x.setAttribute("aria-selected",x===b)); render(); });
+fetch("ranking.json?v="+Date.now()).then(r=>r.json()).then(d=>{ D=d; header(); render(); })
+  .catch(()=>{ $("#view").innerHTML=`<div class="empty">ランキングを読み込めませんでした</div>`; });
+</script>
+</body>
+</html>
