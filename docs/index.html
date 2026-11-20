@@ -77,6 +77,13 @@ details.rule summary{cursor:pointer;font:700 14px "M PLUS Rounded 1c";color:var(
 details.rule table{border-collapse:collapse;width:100%;margin-top:8px}
 details.rule td{padding:5px 6px;border-top:1px solid var(--line);vertical-align:top}
 footer{text-align:center;color:var(--ink3);font-size:11.5px;margin-top:18px}
+.toplink{display:flex;justify-content:flex-start;margin:0 0 12px}
+.back{display:inline-flex;align-items:center;gap:6px;background:#fff;border:1.5px solid var(--or);color:var(--or);border-radius:999px;padding:7px 16px;font:700 13.5px "M PLUS Rounded 1c",sans-serif;text-decoration:none;box-shadow:0 2px 8px rgba(120,60,10,.08)}
+.back:hover{background:var(--orw)}
+.cta{text-align:center;margin:28px 0 6px}
+.cta a{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#ff8a2b,#f26b1d);color:#fff;border-radius:999px;padding:14px 32px;font:800 16px "M PLUS Rounded 1c",sans-serif;text-decoration:none;box-shadow:0 6px 18px rgba(242,107,29,.3)}
+.cta a:hover{filter:brightness(1.05)}
+.cta p{margin:8px 0 0;font-size:12px;color:var(--ink2)}
 @media (max-width:640px){
   .hero h1{font-size:24px}
   .podium{gap:8px;margin-top:40px} .pod{padding:14px 6px 10px} .pod .nm{font-size:14px} .pod .sc{font-size:22px}
@@ -87,6 +94,7 @@ footer{text-align:center;color:var(--ink3);font-size:11.5px;margin-top:18px}
 </head>
 <body>
 <div class="wrap">
+  <div class="toplink"><a class="back" href="https://2026winter.studio.site/" target="_top">‹ 社内キャンペーン特設サイトへ戻る</a></div>
   <div id="sample" class="sample" hidden>これはデザイン確認用のサンプルです（新規登録数はダミー、③既存登録浸透度は現時点の実データ）</div>
   <header class="hero">
     <div class="kicker">年末大抽選会　LINE公式 社内キャンペーン</div>
@@ -111,6 +119,7 @@ footer{text-align:center;color:var(--ink3);font-size:11.5px;margin-top:18px}
       <tr><td><b>注意</b></td><td>期間中に初めて友だち追加した方が対象（再登録は対象外）。①②は人単位、③④は医院単位で集計します。</td></tr>
     </table>
   </details>
+  <div class="cta"><a href="https://2026winter.studio.site/" target="_top">社内キャンペーン特設サイトへ戻る ›</a><p>今週の注目インタビューもチェック！</p></div>
   <footer id="foot"></footer>
 </div>
 <script>
